@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--                 综合                           begin     -->
+    <string name="app_name">物色</string>
+    <string name="hello_world">IWUSE</string>
+    <string name="action_settings">Settings</string>
+    <string name="skip">跳过</string>
+   
+    <string name="enteriwuse">进入物色</string>
+    <string name="product_search">筛选</string>
+	<string name="title_iwusetheme">物色</string>
+	<string name="title_productlist">物件</string>
+	<string name="main_wuse_approve">物色推荐</string>
+	<string name="main_movie">视频</string>
+	<string name="main_user_upload">用户上传</string>
+    <!--                 综合                           end     -->
+    
+	<!--               用户                                        begin-->
+	<string name="login">登录</string>
+	 <string name="userid">手机号</string>
+    <string name="passward">请输入密码</string>
+    <string name="regist">注册</string>
+    <string name="forgetuserinfo"><u>忘记密码?</u></string>
+    <string name="oauth_weichat">微信</string>
+    <string name="prompt_uninstallweichat">您未安装微信</string>
+    <string name="prompt_oauth_weichat_exception">微信授权异常，请重试</string>
+    <string name="oauth_qq">QQ</string>
+    <string name="oauth_paybao">支付宝</string>
+    <string name="oauth_weibo">微博</string>
+	<string name="usercenter_username">名字</string>
+	<string name="usercenter_totalintegral">积分:200</string>
+	<string name="usercenter_icollection">收藏</string>
+	<string name="usercenter_ishopcart">购物车</string>
+	<string name="submitorder">结算</string>
+	<string name="usercenter_iwallet">钱包</string>
+	<string name="usercenter_iorderlist">我的订单</string>
+	<string name="usercenter_callservice">物色客服</string>
+	<string name="usercenter_isubmission">上传投稿</string>
+	<string name="usercenter_setting">软件菜单</string>
+	<string name="usercenter_about">关于</string>
+	<string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="oauth_promt_failed">登录失败</string>
+    <string name="oauth_promt_cancel">取消登录</string>
+    <string name="txt_userdetail_title">用户详细信息</string>
+	<!--                用户                                       end-->
+	
+	<!-- 钱包 -->
+	<string name="my_wallet">我的钱包</string>
+	<string name="add">添加</string>
+	<string name="condition">使用条件：</string>
+	<string name="end_time">使用期限：%s</string>
+	<string name="ticket_id">购物券编号：%s</string>
+	<string name="over_time">已过期</string>
+	<string name="add_ticket">添加购物券</string>
+	<string name="ticket_num_please">请输入购物券号码</string>
+	<string name="confirm">确认</string>
+	<string name="add_success">添加成功</string>
+	<string name="add_desc">感谢您对物色的支持，500元购物券已经存入你的钱包。请随时留意使用方法与期限，期待您的再次光临。</string>
+	<!-- 钱包 -->
+	
+	<!--  				筛选			 begin-->
+	
+	<!--  				筛选			 end-->
+	<string name="kitchen">厨房</string>
+	<string name="bathroom">卫浴间</string>
+	<string name="bedroom">卧房</string>
+	<string name="hall">大厅</string>
+	<string name="outdoor">户外</string>
+	<string name="accessories">饰品</string>
+	<string name="usa_city">美欧城市</string>
+	<string name="nordic_simply">北欧简约</string>
+	<string name="jap_elegant">日式淡雅</string>
+	<string name="asia_holiday">东南亚度假</string>
+	<string name="ornate_palace">华丽宫廷</string>
+	<string name="modern_luxury">奢华现代</string>
+	<!--               商品                                        begin-->
+	
+	<!--               商品                                        end-->
+	
+	<!--               订单                                        begin-->
+	
+	<!--               订单                                        end-->
+	
+</resources>

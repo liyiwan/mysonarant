@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0ffffff"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_filter"
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:padding="15dp"
+    	android:divider="@null"
+    	android:listSelector="@color/no_color" >
+    </ListView>
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+    	android:layout_height="80dp"
+    	android:gravity="center"
+    	android:visibility="gone" >
+        <Button 
+            android:layout_width="60dp"
+    		android:layout_height="60dp"
+            android:background="@drawable/icon_normal_filter"/>
+    </LinearLayout>
+</LinearLayout>

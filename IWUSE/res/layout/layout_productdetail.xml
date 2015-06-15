@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/ll_title_bar"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+    		android:layout_height="30dp"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginTop="15dp"
+    		android:layout_marginBottom="15dp"
+    		android:background="@drawable/btn_back" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+    	android:layout_alignParentBottom="true" >
+        <LinearLayout
+            android:id="@+id/ll_add_cart"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+    		android:layout_weight="2"
+    		android:gravity="center"
+    		android:background="@color/red"
+    		android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:text="@string/add_to_car"
+	    		android:textColor="@color/black" />
+	        <TextView
+	            android:id="@+id/tv_car_num"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="center"
+	    		android:text="@string/add_to_car"
+	    		android:textColor="@color/black"
+	    		android:visibility="gone" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_first_buy"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+    		android:layout_weight="1"
+    		android:text="@string/first_buy"
+    		android:background="@color/main_color" />
+    </LinearLayout>
+    
+    <com.yizi.iwuse.common.widget.WebViewWidget
+        android:id="@+id/wv_product_detail"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_above="@id/ll_bottom_bar"
+    	android:layout_below="@id/ll_title_bar" >
+    </com.yizi.iwuse.common.widget.WebViewWidget>
+    
+    <ImageView
+        android:id="@+id/cart_anim_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cart_anim_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

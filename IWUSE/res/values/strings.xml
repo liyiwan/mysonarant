@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<!--                 综合                           begin     -->
+    <string name="app_name" tools:ignore="MissingTranslation">爱物色</string>
+    <string name="hello_world">IWUSE</string>
+    <string name="action_settings">Settings</string>
+    <string name="skip">跳过</string>
+   	<string name="confirm">确认</string>
+    <string name="reset">重置</string>
+    <string name="cancel">取消</string>
+    <string name="all">全部</string>
+    <string name="enteriwuse">进入爱物色</string>
+    <string name="product_search">筛选</string>
+	<string name="title_iwusetheme">爱物色</string>
+	<string name="title_productlist">物件</string>
+	<string name="main_wuse_approve">爱物色推荐</string>
+	<string name="main_movie">视频</string>
+	<string name="main_user_upload">用户上传</string>
+	<string name="no_login">未登录</string>
+	<string name="is_login">已登录</string>
+	<string name="usercenter_address">收货地址</string>
+	<string name="usercenter_addressedit">修改收货地址</string>
+	<string name="usercenter_createaddress">添加收货地址</string>
+	<string name="address_edit_contactname">收件人姓名</string>
+	<string name="address_edit_contactphone">收件人电话</string>
+	<string name="address_edit_zipcode">邮政编码</string>
+	<string name="address_edit_mainaddr">收件人地址</string>
+	<string name="address_edit_subaddr">详细地址</string>
+    <!--                 综合                           end     -->
+    
+	<!--               用户                                        begin-->
+	<string name="login">登录</string>
+	<string name="testlogin">登陆（测试）</string>
+	<string name="userid">手机号</string>
+    <string name="passward">请输入密码</string>
+    <string name="regist">注册</string>
+    <string name="forgetuserinfo"><u>忘记密码?</u></string>
+    <string name="oauth_weichat">微信</string>
+    <string name="prompt_uninstallweichat">您未安装微信</string>
+    <string name="prompt_oauth_weichat_exception">微信授权异常，请重试</string>
+    <string name="oauth_qq">QQ</string>
+    <string name="oauth_paybao">支付宝</string>
+    <string name="oauth_weibo">微博</string>
+	<string name="usercenter_username">名字</string>
+	<string name="usercenter_totalintegral">积分:200</string>
+	<string name="usercenter_icollection">收藏</string>
+	<string name="usercenter_ishopcart">购物车</string>
+	<string name="submitorder">结算</string>
+	<string name="usercenter_iwallet">钱包</string>
+	<string name="usercenter_iorderlist">我的订单</string>
+	<string name="usercenter_callservice">爱物色客服</string>
+	<string name="usercenter_isubmission">上传投稿</string>
+	<string name="usercenter_setting">软件菜单</string>
+	<string name="usercenter_about">关于</string>
+	<string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="oauth_promt_failed">登录失败</string>
+    <string name="oauth_promt_cancel">取消登录</string>
+    <string name="login_success">登录成功</string>
+    <string name="txt_userdetail_title">用户详细信息</string>
+    <string name="about_us">
+				\t\t2015年3月，由两大实力派家居企业广州库玛设计、广州洪森科技共同打造的广州椅客信息科技有限公司（以下简称椅客科技）吹响了集结的号角。
+				\n
+				\n\t\t椅客科技以互联网软装及智能家居为目标，将丰富的软装设计概念与流行趋势融为一体，为供应商提供免费/方便/简介的CRM管理系统，依托强大的设计团队为供应商全方位包装产品，做好品牌形象，针对精装楼盘与地产销售团队合作，开发全屋家私定制专用终端工具，用时尚杂志的方式定期更新产品信息及设计风格，并以场景化的方式呈现，为消费者带来不一样的用户体验，促进线上线下的销售，实现供应商库存产品的高流转，增加供应商现金流。
+				\n
+				\n\t\t同时兼备丰富软装经验与智能家居开发技术的椅客科技，现重磅打造出“爱物色-IWUSE.COM”一站式家居服务平台，全面启动多任务处理模式，不仅聚集了来自各大供应商的高性价比产品，更为供应商提供从商品摄影、商品包装到免费ERP库存、客户、订单管理系统的一条龙优质服务，致力于将高大上的杂志家居以最接地气的价格送入每一位顾客的家中，掀起一场“梦想照进现实”的变革。
+	</string>
+	<!--                用户                                       end-->
+	
+	<!-- 钱包 				begin-->
+	<string name="my_wallet">我的钱包</string>
+	<string name="add">添加</string>
+	<string name="condition">使用条件：</string>
+	<string name="end_time">使用期限：%s</string>
+	<string name="ticket_id">购物券编号：%s</string>
+	<string name="over_time">已过期</string>
+	<string name="add_ticket">添加购物券</string>
+	<string name="ticket_num_please">请输入购物券号码</string>
+	<string name="add_success">添加成功</string>
+	<string name="add_desc">感谢您对爱物色的支持，500元购物券已经存入你的钱包。请随时留意使用方法与期限，期待您的再次光临。</string>
+	<string name="empty_ticket">暂无任何优惠券，请关注我们的官方微信号，获取更多优惠</string>
+	<!-- 钱包				end -->
+	
+	<!--  				购物车			 begin-->
+	<string name="all_select">全选</string>
+	<string name="no_select">全否</string>
+	<string name="my_shopping_car">我的购物车</string>
+	<string name="sum_price">总金额：￥%d元</string>
+	<string name="use_ticket_please">*如需使用礼券请</string>
+	<string name="no_login_show_dialog">尚未登录\n如没有账号，请点击直接购买</string>
+	<string name="direct_buy">直接购买</string>
+	<string name="consignee">收货人</string>
+	<string name="phone_num">手机号</string>
+	<string name="security_code">验证码</string>
+	<string name="receive_time">收货时间</string>
+	<string name="add_site">添加地址</string>
+	<string name="pay_kind">支付方式</string>
+	<string name="end_count">结算</string>
+	<string name="net_bank">网上银行</string>
+	<string name="submit_order">提交订单</string>
+	<string name="wx_pay">微信支付</string>
+	<string name="product_count">商品金额</string>
+	<string name="should_pay_count">待支付:￥%d元</string>
+	<string name="use_pay_ticket">使用代金券</string>
+	<string name="select_product_please">请选择商品</string>
+	<string name="get_security_code">获取验证码</string>
+	<string name="work_day_get">周一至周五收货</string>
+	<string name="confirm_del_shopping">确定删除该商品</string>
+	<string name="empty_shopping_car">购物车空空如也</string>
+	<string name="input_all_please">请将信息填写完整</string>
+	<!--  				购物车			 end-->
+	
+	<!--  				筛选			 begin-->
+	<string name="certain">确定</string>
+	<!--  				筛选			 end-->
+	
+	<!--  				收藏			 begin-->
+	<string name="my_collect">我的收藏</string>
+	<string name="wuse_collect">爱物色收藏</string>
+	<string name="product_collect">物件收藏</string>
+	<string name="no_collection">暂无收藏</string>
+	<string name="to_look">去逛逛</string>
+	<!--  				收藏			 end-->
+	
+	<string name="kitchen">厨房</string>
+	<string name="bathroom">卫浴间</string>
+	<string name="bedroom">卧房</string>
+	<string name="hall">大厅</string>
+	<string name="outdoor">户外</string>
+	<string name="accessories">饰品</string>
+	<string name="usa_city">美欧城市</string>
+	<string name="nordic_simply">北欧简约</string>
+	<string name="jap_elegant">日式淡雅</string>
+	<string name="asia_holiday">东南亚度假</string>
+	<string name="ornate_palace">华丽宫廷</string>
+	<string name="modern_luxury">奢华现代</string>
+	
+	<!--               商品                                        begin-->
+	<string name="add_to_car">加入购物车</string>
+	<string name="first_buy">马上购买</string>
+	<!--               商品                                        end-->
+	
+	<!--               订单                                        begin-->
+	<string name="order_detail">订单详情</string>
+	<string name="order_id_title">订单编号</string>
+	<string name="order_amount">订单金额</string>
+	<string name="order_status">状态</string>
+	<string name="order_ordertime">下单时间</string>
+	<string name="order_cancel">取消订单</string>
+	<string name="order_pay">付款</string>
+	<string name="order_delete">删除订单</string>
+	<string name="order_refund">我要退款</string>
+	<string name="order_logistics">查看物流</string>
+	<string name="order_confirmlogistics">确认收货</string>
+	<string name="color">颜色</string>
+	<string name="material">材质</string>
+	<string name="size">尺码</string>
+	
+	<string name="paystatus_unpay">未付款</string>
+	<string name="paystatus_payed">已付款</string>
+	<string name="paystatus_confirm">已完成</string>
+	<!--               订单                                        end-->
+	
+    <!-- 下拉刷新，上拉加载更多  begin -->
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <!-- 下拉刷新，上拉加载更多  end -->
+
+	
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:orientation="horizontal">
+    	<TextView
+        android:id="@+id/txt_orderid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_id_title"/>
+        <TextView android:id="@+id/txt_orderid"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_order_thumb"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:src="@drawable/sample2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/txt_orderamount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/order_amount" />
+
+            <TextView
+                android:id="@+id/txt_orderstatus_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/order_status" />
+
+            <TextView
+                android:id="@+id/txt_ordertime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/order_ordertime" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="2"
+            android:gravity="left"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txt_orderamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txt_orderstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/txt_ordertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_orderdetail"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_detail" />
+    </LinearLayout>
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:gravity="right"        
+        android:orientation="horizontal" >
+
+		<Button
+		    android:id="@+id/btn_ordercancel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_cancel" />
+
+		<Button
+		    android:id="@+id/btn_orderpay"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_pay" />
+
+		<Button
+		    android:id="@+id/btn_orderdelete"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_delete" />
+
+		<Button
+		    android:id="@+id/btn_orderlogistics"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_logistics" />
+	    
+        </LinearLayout>
+    
+</LinearLayout>

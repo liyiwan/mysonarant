@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<project name="IWUSE" basedir="." default="checkstyle">
+    
+     <property name="thrid.dir" value="/root/.jenkins/jobs/thridpart"/>   
+<taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask"
+classpath="${thrid.dir}/checkstyle-5.6-all.jar" />  
+<target name="checkstyle"  description="Generates a report of code convention violations.">        
+<mkdir dir="checkstyle" /> 
+<checkstyle config="${thrid.dir}/sun_checks.xml" failureProperty="checkstyle.failure"  failOnViolation="false">   
+<formatter type="xml"   tofile="checkstyle/checkstyle-result.xml" />     
+<fileset dir="src" includes="**/*.java" />
+</checkstyle>
+<taskdef resource="checkstyletask.properties"
+           classpath="${thrid.dir}/checkstyle-5.6-all.jar"/>
+<xslt in="checkstyle/checkstyle-result.xml" out="checkstyle/checkstyle-result.html"
+style="${thrid.dir}/checkstyle-author.xsl" />   
+</target>
+</project>

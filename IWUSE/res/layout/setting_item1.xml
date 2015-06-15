@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_bg" >
+        
+    <TextView 
+        android:id="@+id/setting_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="清除缓存"
+        android:textColor="@color/setting_item_text"
+        android:layout_centerInParent="true"
+        />
+
+    <Switch
+        android:id="@+id/setting_item_text_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        />
+
+</RelativeLayout>

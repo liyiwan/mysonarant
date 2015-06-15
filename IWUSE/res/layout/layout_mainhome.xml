@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 主内容窗体 -->
+    <FrameLayout
+        android:id="@+id/center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+    </FrameLayout>
+    <!-- <RelativeLayout
+        android:id="@+id/lay_frame_mainhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+        主内容窗体
+        <FrameLayout
+            android:id="@+id/frame_mainhomecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="vertical">
+        </FrameLayout>
+    </RelativeLayout>
+    左侧滑动栏
+
+    <ScrollView
+        android:id="@+id/layout_mainhome_usercenter"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/transparent"
+        >
+    </ScrollView>
+    右侧滑动栏
+
+    <LinearLayout
+        android:id="@+id/layout_mainhome_productsearch"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+         >
+    </LinearLayout> -->
+
+</LinearLayout>

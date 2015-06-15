@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yizi.iwuse"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" tools:ignore="ProtectedPermissions"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yizi.iwuse.general.WelcomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 订单 -->
+        <activity android:name="com.yizi.iwuse.order.OrderActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.order.LookTransportActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.order.SubmitOrderActivity" android:launchMode="singleTask"/>
+        
+        <!-- 公共/综合 -->
+        <activity android:name="com.yizi.iwuse.general.MainHomeActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.general.AddresManageActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.general.AddressEditActivity" android:launchMode="singleTask"/>
+        
+        <!-- 用户 -->
+        <activity android:name="com.yizi.iwuse.order.OrderListActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.order.OrderDetailActivity"  android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.ShoppingCartActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.AddresManageActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.AddressEditActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.CallServiceActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.SettingActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.AboutActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.LoginActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.UserActivity" android:launchMode="singleInstance"/>
+        <activity android:name="com.yizi.iwuse.user.UserCollectionActivity" />
+        <activity android:name="com.yizi.iwuse.user.SubmissionActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yizi.iwuse.user.WalletActivity" android:launchMode="singleTask"></activity>
+        <activity android:name="com.yizi.iwuse.user.AddTicketActivity" android:launchMode="singleTask"></activity>
+        <activity android:name="com.yizi.iwuse.user.AddSiteActivity" android:launchMode="singleTask"></activity>
+
+        <!-- 产品  -->
+        <activity android:name="com.yizi.iwuse.product.ProductDetailActivity" android:launchMode="singleTask"></activity>
+        <!-- 微信登录 -->
+        <activity android:name="com.yizi.iwuse.wxapi.WXEntryActivity" android:exported="true"/>
+        <!--  QQ登录    -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1104654550" />
+            </intent-filter>
+        </activity>
+		<activity 
+		    android:name="com.tencent.connect.common.AssistActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|screenSize" 
+		/>
+		<!-- 新浪微博 -->
+		<activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+		    android:configChanges="keyboardHidden|orientation"
+		    android:windowSoftInputMode="adjustResize"
+		    android:exported="false" >
+		</activity>
+		<service android:name="com.sina.weibo.sdk.net.DownloadService"
+		    android:exported="false">
+		</service>
+       <!-- 友盟 -->
+        <meta-data android:value="55519890e0f55ac75900374f" android:name="UMENG_APPKEY"></meta-data>
+		<meta-data android:value="channel_wandoujia" android:name="UMENG_CHANNEL"/>
+    </application>
+
+</manifest>
