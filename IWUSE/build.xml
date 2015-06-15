@@ -1,18 +1,67 @@
-<?xml version="1.0"?>
-<project name="IWUSE" basedir="." default="checkstyle">
+<project basedir="." name="ESOP" default="sonar" xmlns:sonar="antlib:org.sonar.ant">
+    <property name="root" value="${basedir}" />
+    <property name="name" value="IWUSE" />  
+     
+    <property name="esop_lib_home" value="${root}/libs/" />
+    <property name="checkstyle.dir" location="./checkstyle" />
+     
     
-     <property name="thrid.dir" value="/root/.jenkins/jobs/thridpart"/>   
-<taskdef name="checkstyle" classname="com.puppycrawl.tools.checkstyle.CheckStyleTask"
-classpath="${thrid.dir}/checkstyle-5.6-all.jar" />  
-<target name="checkstyle"  description="Generates a report of code convention violations.">        
-<mkdir dir="checkstyle" /> 
-<checkstyle config="${thrid.dir}/sun_checks.xml" failureProperty="checkstyle.failure"  failOnViolation="false">   
-<formatter type="xml"   tofile="checkstyle/checkstyle-result.xml" />     
-<fileset dir="src" includes="**/*.java" />
-</checkstyle>
-<taskdef resource="checkstyletask.properties"
-           classpath="${thrid.dir}/checkstyle-5.6-all.jar"/>
-<xslt in="checkstyle/checkstyle-result.xml" out="checkstyle/checkstyle-result.html"
-style="${thrid.dir}/checkstyle-author.xsl" />   
-</target>
+    	<property name="sonar.host.url" value="http://192.168.181.129:9000"/>
+    <property name="sonar.jdbc.url" value="jdbc:mysql://192.168.181.129:3306/sonar" />
+    <property name="sonar.jdbc.username" value="sonar" />
+    <property name="sonar.jdbc.password" value="sonar" /> 
+    <property name="sonar.projectKey" value="org.codehaus.sonar:${name}" />
+    <property name="sonar.projectName" value="${name}" />
+     
+   
+    <property name="sonar.projectVersion" value="0.1" />  
+     
+    <property name="sonar.language" value="java" />
+    <property name="sonar.sources" value="src" />
+    <property name="sonar.binaries" value="bin/classes" />
+
+    
+ 
+    
+  
+    
+    
+   <taskdef resource="checkstyletask.properties"
+         classpath="${checkstyle.dir}/checkstyle-5.6-all.jar"/>
+
+    <target name="checkstyle" 
+        description="Generates a report of code convention violations.">
+
+        <checkstyle config="${checkstyle.dir}/sun_checks.xml"
+            failureProperty="checkstyle.failure" failOnViolation="false">
+            <formatter type="xml" tofile="${checkstyle.dir}/checkstyle_report.xml" />
+            <fileset dir="src" includes="**/*.java" />
+        </checkstyle>
+
+        
+        
+<!--         <xslt in="${checkstyle.dir}/checkstyle_report.xml" out="${checkstyle.dir}/checkstyle_report.html" -->
+<!--             style="${checkstyle.dir}/checkstyle-author.xsl" /> -->
+
+    </target>
+
+    
+	
+   
+     
+    <target name="sonar">
+        <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+            <classpath path="${esop_lib_home}/sonar-ant-task-2.3.jar" />
+        </taskdef>
+        <sonar:sonar />
+    </target>
+	
+	
+	  
+	
+	
+	
+	
+	
+	
 </project>
