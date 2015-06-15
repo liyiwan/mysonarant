@@ -18,8 +18,7 @@
      
     <property name="sonar.language" value="java" />
     <property name="sonar.sources" value="src" />
-  
-
+   
     
  
     
@@ -40,8 +39,6 @@
 
         
         
-<!--         <xslt in="${checkstyle.dir}/checkstyle_report.xml" out="${checkstyle.dir}/checkstyle_report.html" -->
-<!--             style="${checkstyle.dir}/checkstyle-author.xsl" /> -->
 
     </target>
 
