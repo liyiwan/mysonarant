@@ -1,4 +1,4 @@
-<project basedir="." name="ESOP" default="sonar" xmlns:sonar="antlib:org.sonar.ant">
+<project basedir="." name="IWUSE" default="sonar" xmlns:sonar="antlib:org.sonar.ant">
     <property name="root" value="${basedir}" />
     <property name="name" value="IWUSE" />  
      
