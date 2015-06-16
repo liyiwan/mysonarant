@@ -10,7 +10,7 @@
     <property name="sonar.jdbc.url" value="jdbc:mysql://192.168.181.129:3306/sonar" />
     <property name="sonar.jdbc.username" value="sonar" />
     <property name="sonar.jdbc.password" value="sonar" /> 
-    <property name="sonar.projectKey" value="org.codehaus.sonar:${name}" />
+    <property name="sonar.projectKey" value="${name}" />
     <property name="sonar.projectName" value="${name}" />
      
    
