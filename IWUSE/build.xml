@@ -18,7 +18,7 @@
      
     <property name="sonar.language" value="java" />
     <property name="sonar.sources" value="src" />
-    <property name="sonar.binaries" value="bin/classes" />
+ 
     
  
     
