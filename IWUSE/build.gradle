@@ -1,0 +1,184 @@
+ldscript {
+
+  repositories {
+
+      mavenCentral()
+
+  }
+
+  dependencies {
+
+      classpath 'com.android.tools.build:gradle:0.5.6'
+}
+
+ }
+
+
+
+  apply plugin: 'android'
+
+
+
+ dependencies {
+
+  compile fileTree(dir: 'libs', include: '*.jar')
+
+}
+
+
+
+  android {
+
+  compileSdkVersion 21
+
+  buildToolsVersion "21.0.0"
+signingConfigs {
+
+      myConfig {
+
+          storeFile file("debug.keystore")
+
+          storePassword "android"
+
+          keyAlias "androiddebugkey"
+
+          keyPassword "android"
+
+      }
+
+  }
+
+   
+
+  defaultConfig {
+
+      versionCode 1
+
+      versionName getVersionName()
+
+      minSdkVersion 8
+
+      targetSdkVersion 17
+
+  }
+
+productFlavors {
+
+      google{
+
+       
+
+      }
+
+      tantai{
+
+       
+
+      }
+
+  }
+
+   
+
+  buildTypes{
+
+      release {
+
+          signingConfig signingConfigs.myConfig
+
+          runProguard true
+
+          proguardFile 'proguard.cfg'
+
+      }
+
+  }
+
+   
+
+  sourceSets {
+
+      main {
+
+          manifest {
+
+              srcFile 'AndroidManifest.xml'
+
+          }
+
+          java {
+
+              srcDir 'src'
+
+          }
+
+          res {
+
+              srcDir 'res'
+
+          }
+
+          assets {
+
+              srcDir 'assets'
+
+          }
+
+          resources {
+
+              srcDir 'src'
+
+          }
+
+          aidl {
+
+              srcDir 'src'
+
+          }
+
+      }
+
+  }
+
+  }
+
+
+
+
+
+   tasks.withType(Compile) {
+
+  options.encoding = "UTF-8"
+
+   }
+android.applicationVariants.all{ variant ->
+
+  variant.processManifest.doLast{
+
+      copy{
+
+          from("${buildDir}/manifests"){
+
+              include "${variant.dirName}/AndroidManifest.xml"
+
+          }
+
+          into("${buildDir}/manifests/$variant.name")
+
+
+
+          filter{
+
+              String line -> line.replaceAll("UMENG_CHANNEL_VALUE", "$variant.name")
+
+          }
+
+
+
+          variant.processResources.manifestFile = file("${buildDir}/manifests/${variant.name}/${variant.dirName}/AndroidManifest.xml")
+
+      }   
+
+   }
+
+    }
